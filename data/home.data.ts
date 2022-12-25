@@ -1,8 +1,8 @@
 import type { GitItem, TopicItem } from '@/types/home.types';
-import type { ProjectItem, ProjectType } from '@/types/common.types';
+import type { ProjectItem } from '@/types/common.types';
 
 const hero = {
-  title: 'Разработка\nвеб-приложений',
+  titleList: ['О Разработке\nвеб-приложений', 'Архитектура. Разработка. Тестирование.', 'Обсуждаем важные темы, учимся сложным вещам', 'Разработчик о разработке софта', 'Вся сложная логика основана на простых правилах', 'О Nuxt, Vue, TypeScript и о много другом'],
   text: 'Привет! Меня зовут Даня, я работаю Фронтэнд-разработчиком уже 3 года. На данном сайте я делюсь опытом, технологиями, которые использую и просто рассказываю интересные вещи о разработке.',
   image: {
     alt: 'Hero image',

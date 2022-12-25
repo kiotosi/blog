@@ -13,6 +13,10 @@ const navigationList: HeaderNavigationItem[] = [
     url: '/about',
   },
   {
+    name: 'Стек',
+    url: '/stack',
+  },
+  {
     name: 'Блог',
     url: '/blog',
   },
