@@ -43,12 +43,17 @@ defineProps<HeroProps>();
     font-weight: 700;
     margin: 0;
     white-space: pre-wrap;
+    background: #f2709c;
+    background-image: linear-gradient(120deg, #858e96, #34073d);
+    background-clip: text;
+    color: transparent;
   }
 
   &__text {
     margin: 40px 0 0;
     font-weight: 500;
     line-height: 1.69;
+    color: #737373;
   }
 
   &__image {

@@ -39,7 +39,7 @@ const topicList: TopicItem[] = [
   },
   {
     title: 'Разработка.',
-    description: 'Уметь писать код - непросто. В разработке зачастую больше думаешь, нежели пишешь.',
+    description: 'Уметь писать код - непросто.\nВ разработке зачастую больше думаешь, нежели пишешь.',
     image: {
       src: '/img/skill_developing.png',
       alt: 'Development',
