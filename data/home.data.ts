@@ -65,6 +65,14 @@ const projectList: ProjectItem[] = [
       url: 'https://github.com/kiotosi/researcher',
     },
   },
+  {
+    type: 'github',
+    info: {
+      name: 'Blog',
+      description: 'Данный блог. Блог сделан на Nuxt 3, Vue, Typescript.',
+      url: 'https://github.com/kiotosi/researcher',
+    },
+  },
 ];
 
 export default {
