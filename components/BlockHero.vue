@@ -1,0 +1,99 @@
+<template>
+  <div class="container hero">
+    <div class="hero__info">
+      <h1 class="hero__title">
+        {{ title }}
+      </h1>
+      <div class="hero__text">
+        {{ text }}
+      </div>
+    </div>
+    <img :src="image.src" :alt="image.alt" class="hero__image">
+  </div>
+</template>
+
+<script setup lang="ts">
+import type { Image } from '@/types/common.types';
+
+interface HeroProps {
+  title: string;
+  text: string;
+  image: Image;
+}
+
+defineProps<HeroProps>();
+</script>
+
+<style lang="scss" scoped>
+.hero {
+  margin: 120px auto 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  pointer-events: none;
+
+  &__info {
+    max-width: 600px;
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 0;
+    white-space: pre-wrap;
+  }
+
+  &__text {
+    margin: 40px 0 0;
+    font-weight: 500;
+    line-height: 1.69;
+  }
+
+  &__image {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .hero {
+    &__title {
+      font-size: 52px;
+    }
+
+    &__image {
+      max-width: 350px;
+      margin-left: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .hero {
+    display: block;
+
+    &__info {
+      max-width: initial;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__image {
+      max-width: 350px;
+      margin: 60px auto 0;
+    }
+  }
+}
+@media screen and (max-width: $mobile) {
+  .hero {
+    &__title {
+      font-size: 32px;
+    }
+  }
+}
+</style>

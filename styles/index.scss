@@ -1,0 +1,30 @@
+@import '@/styles/_fonts';
+@import '@/styles/_colors';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+body {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+}

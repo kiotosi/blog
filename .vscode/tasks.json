@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "icon": {
+        "color": "terminal.ansiBlue",
+        "id": "debug-start"
+      },
+      "label": "Launch Nuxt 3 server",
+      "detail": "nuxt dev (Developer Mode)"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "problemMatcher": [],
+      "icon": {
+        "color": "terminal.ansiGreen",
+        "id": "git-pull-request-go-to-changes"
+      },
+      "label": "Build Nuxt 3 app",
+      "detail": "nuxt build (Production Mode)"
+    },
+    {
+      "type": "npm",
+      "script": "lint",
+      "problemMatcher": [],
+      "icon": {
+        "color": "terminal.ansiYellow",
+        "id": "list-unordered"
+      },
+      "label": "Lint the project",
+      "detail": "eslint --ext .ts,.vue,.js --fix"
+    }
+  ]
+}
