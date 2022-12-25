@@ -1,11 +1,12 @@
 <template>
   <div class="home">
     <Title>Kioblog</Title>
-    <BlockHero
+    <HomeHero
       v-bind="homeData.hero"
     />
-    <BlockGit :git-list="homeData.gitList" />
-    <BlockTopics :topic-list="homeData.topicList" />
+    <HomeGit :git-list="homeData.gitList" />
+    <HomeTopics :topic-list="homeData.topicList" />
+    <HomeProjects :project-list="homeData.projectList" />
   </div>
 </template>
 

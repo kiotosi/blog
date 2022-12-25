@@ -7,6 +7,7 @@
       <div v-for="(t, index) in layoutData.footerInfo.text" :key="index" class="footer__text">
         {{ t }}
       </div>
+      <FooterLinks :link-list="layoutData.footerInfo.logoList" class="footer__links" />
     </div>
     <img class="footer__image" :src="layoutData.footerInfo.image.src" :alt="layoutData.footerInfo.image.alt">
   </footer>
@@ -42,6 +43,10 @@ import layoutData from '@/data/layout.data';
   &__text {
     margin-top: 40px;
     white-space: pre-wrap;
+  }
+
+  &__links {
+    margin-top: 60px;
   }
 }
 

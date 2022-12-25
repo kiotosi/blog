@@ -1,4 +1,5 @@
 import type { GitItem, TopicItem } from '@/types/home.types';
+import type { ProjectItem, ProjectType } from '@/types/common.types';
 
 const hero = {
   title: 'Разработка\nвеб-приложений',
@@ -55,8 +56,20 @@ const topicList: TopicItem[] = [
   },
 ];
 
+const projectList: ProjectItem[] = [
+  {
+    type: 'github',
+    info: {
+      name: 'Researcher',
+      description: 'App for storing links, videos, books and other information for researches',
+      url: 'https://github.com/kiotosi/researcher',
+    },
+  },
+];
+
 export default {
   hero,
   gitList,
   topicList,
+  projectList,
 };

@@ -94,6 +94,15 @@ defineProps<HeroProps>();
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .hero {
+    &__image {
+      max-width: initial;
+    }
+  }
+}
+
 @media screen and (max-width: $mobile) {
   .hero {
     &__title {

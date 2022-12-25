@@ -68,6 +68,13 @@ defineProps<GitListProps>();
     &__info {
       display: none;
     }
+
+    &__list {
+      gap: initial;
+      justify-content: space-around;
+      margin: initial;
+      width: 100%;
+    }
   }
 }
 </style>
