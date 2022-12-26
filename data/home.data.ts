@@ -2,8 +2,8 @@ import type { GitItem, TopicItem } from '@/types/home.types';
 import type { ProjectItem } from '@/types/common.types';
 
 const hero = {
-  titleList: ['О Разработке\nвеб-приложений', 'Архитектура. Разработка. Тестирование.', 'Обсуждаем важные темы, учимся сложным вещам', 'Разработчик о разработке софта', 'Вся сложная логика основана на простых правилах', 'О Nuxt, Vue, TypeScript и о много другом'],
-  text: 'Привет! Меня зовут Даня, я работаю Фронтэнд-разработчиком уже 3 года. На данном сайте я делюсь опытом, технологиями, которые использую и просто рассказываю интересные вещи о разработке.',
+  title: 'home.hero.title',
+  text: 'home.hero.text',
   image: {
     alt: 'Hero image',
     src: '/img/hero_img.png',
@@ -31,24 +31,24 @@ const gitList: GitItem[] = [
 
 const topicList: TopicItem[] = [
   {
-    title: 'Архитектура.',
-    description: 'Для каждого разработчка жизненно необходимо уметь принимать решения, от которых зависит успех разработки',
+    title: 'home.topics.architecture.title',
+    description: 'home.topics.architecture.description',
     image: {
       src: '/img/skill_architecturing.png',
       alt: 'Architecture',
     },
   },
   {
-    title: 'Разработка.',
-    description: 'Уметь писать код - непросто.\nВ разработке зачастую больше думаешь, нежели пишешь.',
+    title: 'home.topics.development.title',
+    description: 'home.topics.development.description',
     image: {
       src: '/img/skill_developing.png',
       alt: 'Development',
     },
   },
   {
-    title: 'Сопровождение.',
-    description: 'Сопровождение кода занимает большую часть времени.\nЯ с радостью расскажу о рефакторинге, тестировании, а также устранении легаси.',
+    title: 'home.topics.support.title',
+    description: 'home.topics.support.description',
     image: {
       src: '/img/skill_supporting.png',
       alt: 'Support',
@@ -60,17 +60,25 @@ const projectList: ProjectItem[] = [
   {
     type: 'github',
     info: {
-      name: 'Researcher',
-      description: 'App for storing links, videos, books and other information for researches',
+      name: 'home.projects.researcher.name',
+      description: 'home.projects.researcher.description',
       url: 'https://github.com/kiotosi/researcher',
     },
   },
   {
     type: 'github',
     info: {
-      name: 'Blog',
-      description: 'Данный блог. Блог сделан на Nuxt 3, Vue, Typescript.',
-      url: 'https://github.com/kiotosi/researcher',
+      name: 'home.projects.blog.name',
+      description: 'home.projects.blog.description',
+      url: 'https://github.com/kiotosi/blog',
+    },
+  },
+  {
+    type: 'gitlab',
+    info: {
+      name: 'home.projects.metaparser.name',
+      description: 'home.projects.metaparser.description',
+      url: 'https://gitlab.com/kiotosi/meta-parser-js',
     },
   },
 ];

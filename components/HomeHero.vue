@@ -2,10 +2,10 @@
   <div class="container hero">
     <div class="hero__info">
       <h1 class="hero__title">
-        {{ titleList.at(Math.floor(Math.random() * titleList.length)) }}
+        {{ $t(title) }}
       </h1>
       <div class="hero__text">
-        {{ text }}
+        {{ $t(text) }}
       </div>
     </div>
     <img :src="image.src" :alt="image.alt" class="hero__image">
@@ -16,7 +16,7 @@
 import type { Image } from '@/types/common.types';
 
 interface HeroProps {
-  titleList: string[];
+  title: string;
   text: string;
   image: Image;
 }

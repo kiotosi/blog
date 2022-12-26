@@ -1,7 +1,9 @@
 <template>
   <div class="container git">
     <div class="git__info">
-      <div class="git__text">Вы можете посмотреть мои работы тут!</div>
+      <div class="git__text">
+        {{ $t('home.git.seeMore') }}
+      </div>
       <img src="/img/see_arrow.svg" alt="Arrow">
     </div>
     <ul class="git__list">

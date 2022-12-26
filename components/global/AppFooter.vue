@@ -2,10 +2,10 @@
   <footer class="container footer">
     <div class="footer__info">
       <div class="footer__title">
-        {{ layoutData.footerInfo.title }}
+        {{ $t(layoutData.footerInfo.title) }}
       </div>
       <div v-for="(t, index) in layoutData.footerInfo.text" :key="index" class="footer__text">
-        {{ t }}
+        {{ $t(t) }}
       </div>
       <FooterLinks :link-list="layoutData.footerInfo.logoList" class="footer__links" />
     </div>

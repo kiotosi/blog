@@ -2,10 +2,10 @@
   <div class="topic">
     <img :src="image.src" :alt="image.alt" class="topic__image">
     <div class="topic__title">
-      {{ title }}
+      {{ $t(title) }}
     </div>
     <div class="topic__description">
-      {{ description }}
+      {{ $t(description) }}
     </div>
   </div>
 </template>
