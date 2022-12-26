@@ -3,10 +3,10 @@
     <img :src="icon.src" :alt="icon.alt" class="project__logo">
     <div class="project__info">
       <div class="project__name">
-        {{ info.name }}
+        {{ $t(info.name) }}
       </div>
       <div class="project__description">
-        {{ info.description }}
+        {{ $t(info.description) }}
       </div>
     </div>
   </a>
@@ -57,10 +57,16 @@ const icon = computed<Image>(() => {
 
   &:hover {
     background-color: #e7e7e7;
+
+    .project__logo {
+      filter: none;
+    }
   }
 
   &__logo {
+    transition: all .25s ease-in-out;
     width: 48px;
+    filter: grayscale(100%) contrast(50%);
   }
 
   &__name {
@@ -68,7 +74,16 @@ const icon = computed<Image>(() => {
   }
 
   &__description {
+    white-space: pre-wrap;
     margin-top: 4px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .project {
+    &__description {
+      white-space: initial;
+    }
   }
 }
 

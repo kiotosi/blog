@@ -9,19 +9,19 @@ const logo: Image = {
 
 const navigationList: HeaderNavigationItem[] = [
   {
-    name: 'Об авторе',
+    name: 'header.navigation.author',
     url: '/about',
   },
   {
-    name: 'Стек',
+    name: 'header.navigation.stack',
     url: '/stack',
   },
   {
-    name: 'Блог',
+    name: 'header.navigation.blog',
     url: '/blog',
   },
   {
-    name: 'Связаться',
+    name: 'header.navigation.contact',
     url: '/contact',
   },
 ];
@@ -51,10 +51,10 @@ const logoList: FooterLink[] = [
 ];
 
 const footerInfo: FooterInfo = {
-  title: 'Вы можете мне написать!',
+  title: 'footer.title',
   text: [
-    'Справа предоставлена форма обратной связи, которая поможет вам связаться со мной.',
-    'Также внизу можно найти ссылки на различные сети.\nВы можете спокойно написать мне в телеграм и я постараюсь ответить вам в течение дня.',
+    'footer.text',
+    'footer.more',
   ],
   image: {
     src: '/img/footer.png',

@@ -30,10 +30,6 @@ defineProps<FooterLinksProps>();
     }
   }
 
-  &__link {
-
-  }
-
   &__logo {
     width: 32px;
   }

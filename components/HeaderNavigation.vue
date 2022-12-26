@@ -3,7 +3,7 @@
     <ul class="navigation__list navigation-list" :class="{ 'navigation-list_mobile-active': hasOpenedMenu }">
       <li v-for="(item, index) in navigationList" :key="index" class="navigation-list__item">
         <a :href="item.url" class="navigation-list__link" @click="hasOpenedMenu = false">
-          {{ item.name }}
+          {{ $t(item.name) }}
         </a>
       </li>
     </ul>
