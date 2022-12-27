@@ -18,10 +18,6 @@ defineProps<TopicsProps>();
 </script>
 
 <style scoped lang="scss">
-.topics {
-  margin: 140px auto;
-}
-
 .topics-list {
   display: flex;
   gap: 125px;

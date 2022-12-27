@@ -20,8 +20,6 @@ defineProps<ProjectsProps>();
 
 <style scoped lang="scss">
 .projects {
-  margin: 120px auto 70px;
-
   &__title {
     font-size: 38px;
     font-weight: 700;
@@ -45,6 +43,12 @@ defineProps<ProjectsProps>();
     &__title {
       font-size: 36px;
       margin-left: 16px;
+    }
+  }
+
+  .project-list {
+    &__item + &__item {
+      margin-top: 32px;
     }
   }
 }

@@ -26,29 +26,29 @@ const navigationList: HeaderNavigationItem[] = [
   },
 ];
 
-const logoList: FooterLink[] = [
-  {
+const socialLinks = {
+  hh: {
     image: {
       alt: 'hh.ru Logo',
       src: '/icons/hh.svg',
     },
     url: 'https://hh.ru/resume/dbf8a5e8ff0950409e0039ed1f6d644b525736',
   },
-  {
-    image: {
-      alt: 'Instagram Logo',
-      src: '/icons/instagram.svg',
-    },
-    url: 'https://www.instagram.com/crackidocky/',
-  },
-  {
+  twitter: {
     image: {
       alt: 'Twitter Logo',
       src: '/icons/twitter.svg',
     },
     url: 'https://twitter.com/beebezzhoney',
   },
-];
+  instagram: {
+    image: {
+      alt: 'Instagram Logo',
+      src: '/icons/instagram.svg',
+    },
+    url: 'https://www.instagram.com/crackidocky/',
+  },
+};
 
 const footerInfo: FooterInfo = {
   title: 'footer.title',
@@ -60,7 +60,7 @@ const footerInfo: FooterInfo = {
     src: '/img/footer.png',
     alt: 'Footer image',
   },
-  logoList,
+  socialLinks,
 };
 
 export default {

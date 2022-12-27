@@ -2,9 +2,7 @@
   <nav class="navigation">
     <ul class="navigation__list navigation-list" :class="{ 'navigation-list_mobile-active': hasOpenedMenu }">
       <li v-for="(item, index) in navigationList" :key="index" class="navigation-list__item">
-        <a :href="item.url" class="navigation-list__link" @click="hasOpenedMenu = false">
-          {{ $t(item.name) }}
-        </a>
+        <AppLink :href="item.url" has-animation :text="$t(item.name)" />
       </li>
     </ul>
     <div class="navigation__hamburger" @click="hasOpenedMenu = !hasOpenedMenu">
@@ -87,10 +85,11 @@ const hasOpenedMenu = ref(false);
     }
 
     &__link {
+      display: block;
       font-size: 24px;
       font-weight: 500;
+      width: 100%;
     }
-
   }
 }
 </style>

@@ -1,6 +1,8 @@
 <template>
   <header class="header">
-    <img :src="layoutData.logo.src" :alt="layoutData.logo.alt" class="header__logo">
+    <NuxtLink to="/">
+      <img :src="layoutData.logo.src" :alt="layoutData.logo.alt" class="header__logo">
+    </NuxtLink>
     <HeaderNavigation :navigation-list="layoutData.navigationList" class="header__navigation" />
   </header>
 </template>
@@ -12,8 +14,6 @@ import layoutData from '@/data/layout.data';
 
 <style scoped lang="scss">
 .header {
-  position: absolute;
-  top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -23,11 +23,9 @@ import layoutData from '@/data/layout.data';
 
 @media screen and (max-width: $mobile) {
   .header {
+    position: fixed;
     background: white;
     justify-content: center;
-    width: 100%;
-    top: 0;
-    position: fixed;
     padding: 24px;
 
     &__navigation {
