@@ -9,6 +9,11 @@ export interface ObjectImage {
   type: string;
 }
 
+export interface DetailItem {
+  title: string;
+  text: string;
+}
+
 export type ProjectType = 'github' | 'gitlab' | 'bitbucket';
 
 export interface ProjectItem {

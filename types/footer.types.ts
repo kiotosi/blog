@@ -9,5 +9,9 @@ export interface FooterInfo {
   title: string;
   text: string[];
   image: Image;
-  logoList: FooterLink[];
+  socialLinks: {
+    hh: FooterLink;
+    instagram: FooterLink;
+    twitter: FooterLink;
+  };
 }

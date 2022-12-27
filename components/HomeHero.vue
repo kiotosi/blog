@@ -1,5 +1,5 @@
 <template>
-  <div class="container hero">
+  <div class="hero">
     <div class="hero__info">
       <h1 class="hero__title">
         {{ $t(title) }}
@@ -26,7 +26,7 @@ defineProps<HeroProps>();
 
 <style lang="scss" scoped>
 .hero {
-  margin: 120px auto 100px;
+  padding: 80px 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;

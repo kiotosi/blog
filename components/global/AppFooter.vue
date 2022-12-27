@@ -7,7 +7,7 @@
       <div v-for="(t, index) in layoutData.footerInfo.text" :key="index" class="footer__text">
         {{ $t(t) }}
       </div>
-      <FooterLinks :link-list="layoutData.footerInfo.logoList" class="footer__links" />
+      <FooterLinks :link-list="linkList" class="footer__links" />
     </div>
     <img class="footer__image" :src="layoutData.footerInfo.image.src" :alt="layoutData.footerInfo.image.alt">
   </footer>
@@ -15,6 +15,11 @@
 
 <script setup lang="ts">
 import layoutData from '@/data/layout.data';
+
+// Ссылки на социальные сети в виде массива
+const linkList = computed(() => {
+  return Object.values(layoutData.footerInfo.socialLinks);
+});
 </script>
 
 <style scoped lang="scss">

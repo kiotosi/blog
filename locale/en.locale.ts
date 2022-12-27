@@ -49,4 +49,11 @@ export default {
       },
     },
   },
+  about: {
+    bio: {
+      name: 'Daniil Shilo',
+      profession: 'Frontend Engineer',
+      description: 'loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem',
+    },
+  },
 };
