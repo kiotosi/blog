@@ -46,4 +46,10 @@ defineProps<BioProps>();
     margin-top: 16px;
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .bio {
+    padding: 0;
+  }
+}
 </style>

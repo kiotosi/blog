@@ -96,4 +96,12 @@ defineProps<HeroProps>();
     }
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .hero {
+    &__container {
+      padding: 120px 32px;
+    }
+  }
+}
 </style>
