@@ -1,5 +1,5 @@
 <template>
-  <div class="container projects">
+  <div class="projects">
     <div class="projects__title">Проекты</div>
     <ul class="projects__list project-list">
       <li v-for="(project, index) in projectList" :key="index" class="project-list__item project">
@@ -33,8 +33,13 @@ defineProps<ProjectsProps>();
 }
 
 .project-list {
-  &__item + &__item {
-    margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+  align-content: center;
+
+  &__item {
+    height: 100%;
   }
 }
 
@@ -47,6 +52,7 @@ defineProps<ProjectsProps>();
   }
 
   .project-list {
+    grid-template-columns: initial;
     &__item + &__item {
       margin-top: 32px;
     }
@@ -56,7 +62,6 @@ defineProps<ProjectsProps>();
 @media screen and (max-width: $mobile) {
   .projects {
     margin: 64px auto;
-    padding: 0 24px;
   }
 }
 </style>
