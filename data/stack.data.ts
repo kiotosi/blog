@@ -170,18 +170,195 @@ const frontend: TechBranch = {
 };
 
 const backend: TechBranch = {
-  frameworkList: [],
-  libraryList: [],
-  utilityList: [],
+  frameworkList: [
+    {
+      title: 'Express.js',
+      image: {
+        alt: 'express logo',
+        src: '/logos/express-logo.svg',
+      },
+      isFavorite: true,
+    },
+    {
+      title: 'Firebase',
+      image: {
+        alt: 'Firebase logo',
+        src: '/logos/firebase-logo.svg',
+      },
+      isFavorite: true,
+    },
+    {
+      title: 'MongoDB',
+      image: {
+        alt: 'MongoDB logo',
+        src: '/logos/mongodb-logo.svg',
+      },
+      isFavorite: false,
+    },
+    {
+      title: 'Node.js',
+      image: {
+        alt: 'nodejs logo',
+        src: '/logos/nodejs-logo.svg',
+      },
+      isFavorite: true,
+    },
+    {
+      title: 'Nuxt.js',
+      image: {
+        alt: 'nuxt logo',
+        src: '/logos/nuxtjs-logo.svg',
+      },
+      isFavorite: true,
+    },
+    {
+      title: 'Redis',
+      image: {
+        alt: 'Redis logo',
+        src: '/logos/redis-logo.svg',
+      },
+      isFavorite: false,
+    },
+    {
+      title: 'Rust',
+      image: {
+        alt: 'Rust logo',
+        src: '/logos/rust-logo.svg',
+      },
+      isFavorite: true,
+    },
+  ],
+  libraryList: [
+    {
+      title: 'Socket.io',
+      image: {
+        alt: 'socketio logo',
+        src: '/logos/socketio-logo.svg',
+      },
+      isFavorite: true,
+    },
+  ],
+  utilityList: [
+    {
+      title: 'Electron',
+      image: {
+        alt: 'express logo',
+        src: '/logos/electron-logo.svg',
+      },
+      isFavorite: false,
+    },
+    {
+      title: 'Tauri',
+      image: {
+        alt: 'Tauri logo',
+        src: '/logos/tauri-logo.svg',
+      },
+      isFavorite: true,
+    },
+    {
+      title: 'Heroku',
+      image: {
+        alt: 'Heroku logo',
+        src: '/logos/heroku-logo.svg',
+      },
+      isFavorite: true,
+    },
+  ],
 };
 
-const testing: TechBranch = {
-  frameworkList: [],
-  libraryList: [],
-  utilityList: [],
-};
+const testing: StackItem[] = [
+  {
+    title: 'Jest',
+    image: {
+      alt: 'Jest logo',
+      src: '/logos/jest-logo.svg',
+    },
+    isFavorite: true,
+  },
+  {
+    title: 'Mocha',
+    image: {
+      alt: 'Mocha logo',
+      src: '/logos/mocha-logo.svg',
+    },
+    isFavorite: false,
+  },
+  {
+    title: 'Webdriver.io',
+    image: {
+      alt: 'Webdriverio logo',
+      src: '/logos/webdriverio-logo.svg',
+    },
+    isFavorite: false,
+  },
+  {
+    title: 'Spectron',
+    image: {
+      alt: 'Spectron logo',
+      src: '/logos/spectron-logo.png',
+    },
+    isFavorite: true,
+  },
+];
 
-const other: StackItem[] = [];
+const other: StackItem[] = [
+  {
+    title: 'Bash',
+    image: {
+      alt: 'Bash logo',
+      src: '/logos/bash-logo.svg',
+    },
+    isFavorite: false,
+  },
+  {
+    title: 'Docker',
+    image: {
+      alt: 'Docker logo',
+      src: '/logos/docker-logo.svg',
+    },
+    isFavorite: true,
+  },
+  {
+    title: 'Figma',
+    image: {
+      alt: 'Figma logo',
+      src: '/logos/figma-logo.svg',
+    },
+    isFavorite: true,
+  },
+  {
+    title: 'VSCode',
+    image: {
+      alt: 'vscode logo',
+      src: '/logos/vscode-logo.svg',
+    },
+    isFavorite: false,
+  },
+  {
+    title: 'Vim',
+    image: {
+      alt: 'Vim logo',
+      src: '/logos/vim-logo.svg',
+    },
+    isFavorite: true,
+  },
+  {
+    title: 'Linux',
+    image: {
+      alt: 'Linux logo',
+      src: '/logos/linux-logo.svg',
+    },
+    isFavorite: true,
+  },
+  {
+    title: 'Git',
+    image: {
+      alt: 'Git logo',
+      src: '/logos/git-logo.svg',
+    },
+    isFavorite: true,
+  },
+];
 
 const navigation: StackNavigationItem[] = [
   {
@@ -223,20 +400,6 @@ const navigation: StackNavigationItem[] = [
   {
     title: 'stack.navigation.testing',
     id: getNavigationId('testing'),
-    child: [
-      {
-        title: 'stack.navigation.sublist.framework',
-        id: getNavigationId('testing', 'framework'),
-      },
-      {
-        title: 'stack.navigation.sublist.library',
-        id: getNavigationId('testing', 'library'),
-      },
-      {
-        title: 'stack.navigation.sublist.additional',
-        id: getNavigationId('testing', 'additional'),
-      },
-    ],
   },
   {
     title: 'stack.navigation.other',

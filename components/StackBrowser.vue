@@ -34,8 +34,7 @@ const activeStackList = computed<StackItem[]>(() => {
     break;
 
   case 'testing':
-    branchTechnologyList = stackData.testing;
-    break;
+    return stackData.testing;
 
   case 'other':
     return stackData.other;

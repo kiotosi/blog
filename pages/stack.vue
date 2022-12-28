@@ -14,6 +14,4 @@ definePageMeta({
 </script>
 
 <style scoped lang="scss">
-.stack {
-}
 </style>
