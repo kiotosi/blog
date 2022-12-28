@@ -1,5 +1,8 @@
 <template>
   <div class="stack">
+    <Title>
+      Kiotosi's Blog - Stack
+    </Title>
     <StackBrowser />
   </div>
 </template>

@@ -19,6 +19,22 @@ const frontend: TechBranch = {
       isFavorite: false,
     },
     {
+      title: 'Typescript',
+      image: {
+        alt: 'Typescript logo',
+        src: '/logos/typescript-logo.svg',
+      },
+      isFavorite: true,
+    },
+    {
+      title: 'Svelte',
+      image: {
+        alt: 'Svelte logo',
+        src: '/logos/svelte-logo.svg',
+      },
+      isFavorite: true,
+    },
+    {
       title: 'Bootstrap',
       image: {
         alt: 'Bootstrap logo',
@@ -26,9 +42,131 @@ const frontend: TechBranch = {
       },
       isFavorite: false,
     },
+    {
+      title: 'Javascript',
+      image: {
+        alt: 'JS logo',
+        src: '/logos/javascript-logo.svg',
+      },
+      isFavorite: false,
+    },
+    {
+      title: 'HTML 5',
+      image: {
+        alt: 'HTML logo',
+        src: '/logos/html5-logo.svg',
+      },
+      isFavorite: false,
+    },
+    {
+      title: 'CSS 3',
+      image: {
+        alt: 'CSS logo',
+        src: '/logos/css3-logo.svg',
+      },
+      isFavorite: false,
+    },
   ],
-  libraryList: [],
-  utilityList: [],
+  libraryList: [
+    {
+      title: 'Vue Router',
+      image: {
+        alt: 'Vue Router logo',
+        src: '/logos/vue-router-logo.svg',
+      },
+      isFavorite: true,
+    },
+    {
+      title: 'Pinia',
+      image: {
+        alt: 'Pinia logo',
+        src: '/logos/pinia-logo.svg',
+      },
+      isFavorite: true,
+    },
+    {
+      title: 'Three.js',
+      image: {
+        alt: 'Three JS logo',
+        src: '/logos/threejs-logo.svg',
+      },
+      isFavorite: false,
+    },
+    {
+      title: 'JQuery',
+      image: {
+        alt: 'JQuery logo',
+        src: '/logos/jquery-logo.svg',
+      },
+      isFavorite: false,
+    },
+  ],
+  utilityList: [
+    {
+      title: 'Sass',
+      image: {
+        alt: 'Sass logo',
+        src: '/logos/sass-logo.svg',
+      },
+      isFavorite: true,
+    },
+    {
+      title: 'ESLint',
+      image: {
+        alt: 'ESLint logo',
+        src: '/logos/eslint-logo.svg',
+      },
+      isFavorite: false,
+    },
+    {
+      title: 'Gulp',
+      image: {
+        alt: 'Gulp logo',
+        src: '/logos/gulp-logo.svg',
+      },
+      isFavorite: false,
+    },
+    {
+      title: 'Hugo',
+      image: {
+        alt: 'Hugo logo',
+        src: '/logos/hugo-logo.svg',
+      },
+      isFavorite: false,
+    },
+    {
+      title: 'Less',
+      image: {
+        alt: 'Less logo',
+        src: '/logos/less-logo.svg',
+      },
+      isFavorite: false,
+    },
+    {
+      title: 'Stylus',
+      image: {
+        alt: 'Stylus logo',
+        src: '/logos/stylus-logo.svg',
+      },
+      isFavorite: false,
+    },
+    {
+      title: 'Vite',
+      image: {
+        alt: 'Vite logo',
+        src: '/logos/vite-logo.svg',
+      },
+      isFavorite: true,
+    },
+    {
+      title: 'Webpack',
+      image: {
+        alt: 'Webpack logo',
+        src: '/logos/webpack-logo.svg',
+      },
+      isFavorite: false,
+    },
+  ],
 };
 
 const backend: TechBranch = {

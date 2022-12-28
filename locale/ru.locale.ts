@@ -92,10 +92,10 @@ export default {
       testing: 'Тестирование',
       other: 'Другое',
       sublist: {
-        framework: 'Фреймворки',
+        framework: 'Языки и фреймворки',
         library: 'Библиотеки',
         additional: 'Утилиты',
-      }
+      },
     },
   },
 };

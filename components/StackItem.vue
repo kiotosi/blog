@@ -20,8 +20,8 @@ defineProps<StackItem>();
 
 <style scoped lang="scss">
 .stack-item {
-  width: 250px;
-  height: 250px;
+  width: 125px;
+  height: 125px;
   padding: 12px;
   background: var(--white);
   border-radius: 8px;
@@ -33,13 +33,15 @@ defineProps<StackItem>();
   &__image {
     display: block;
     margin-top: auto;
-    width: 128px;
-    height: 128px;
+    width: 52px;
   }
 
   &__title {
     width: 100%;
+    font-size: 14px;
     margin-top: auto;
+    color: #A3A3A3;
+    text-align: right;
   }
 
   &_favorite {
