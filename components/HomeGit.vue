@@ -7,10 +7,10 @@
       <img src="/img/see_arrow.svg" alt="Arrow">
     </div>
     <ul class="git__list">
-      <li v-for="(item, index) in gitList" :key="index" class="git__item" @click="navigateTo(item.url)">
-        <object class="git__image" :data="item.image.src" :type="item.image.type">
-          <img :src="item.image.src" :alt="item.image.alt">
-        </object>
+      <li v-for="(item, index) in gitList" :key="index" class="git__item">
+        <NuxtLink :to="item.url" target="_blank">
+          <img class="git__image" :src="item.image.src" :alt="item.image.alt">
+        </NuxtLink>
       </li>
     </ul>
   </div>
@@ -42,6 +42,10 @@ defineProps<GitListProps>();
     gap: 150px;
   }
 
+  &__text {
+    user-select: none;
+  }
+
   &__item {
     user-select: none;
     cursor: initial;
@@ -57,6 +61,7 @@ defineProps<GitListProps>();
   &__image {
     cursor: pointer;
     display: block;
+    width: 64px;
 
     &:hover {
       filter: drop-shadow(0px 0px 3px rgb(0 0 0 / 0.4));
