@@ -1,5 +1,5 @@
 <template>
-  <div class="container topics">
+  <div class="topics">
     <ul class="topics__list topics-list">
       <li v-for="(topic, index) in topicList" :key="index" class="topics-list__item">
         <TopicItem v-bind="topic" />

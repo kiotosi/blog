@@ -50,6 +50,21 @@ const socialLinks = {
   },
 };
 
+const a404 = {
+  titleList: [
+    'development.people',
+    'development.elves',
+    'development.developer',
+    'development.hmm',
+  ],
+  fuGoBack: 'development.back',
+  description: 'development.description',
+  image: {
+    src: '/img/development.png',
+    alt: 'Warning image',
+  },
+};
+
 const footerInfo: FooterInfo = {
   title: 'footer.title',
   text: [
@@ -67,4 +82,5 @@ export default {
   navigationList,
   logo,
   footerInfo,
+  a404,
 };

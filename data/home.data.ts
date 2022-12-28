@@ -27,6 +27,14 @@ const gitList: GitItem[] = [
     },
     url: 'https://gitlab.com/kiotosi',
   },
+  {
+    image: {
+      type: 'image/svg+xml',
+      alt: 'Codepen Logo',
+      src: '/icons/codepen.svg',
+    },
+    url: 'https://codepen.io/kiotosi',
+  },
 ];
 
 const topicList: TopicItem[] = [
@@ -64,6 +72,7 @@ const projectList: ProjectItem[] = [
       description: 'home.projects.researcher.description',
       url: 'https://github.com/kiotosi/researcher',
     },
+    stack: ['Rust', 'Tauri', 'Vue', 'Typescript'],
   },
   {
     type: 'github',
@@ -72,14 +81,34 @@ const projectList: ProjectItem[] = [
       description: 'home.projects.blog.description',
       url: 'https://github.com/kiotosi/blog',
     },
+    stack: ['Nuxt', 'Vue', 'Typescript'],
+  },
+  {
+    type: 'gitlab',
+    info: {
+      name: 'home.projects.promisifyMedia.name',
+      description: 'home.projects.promisifyMedia.description',
+      url: 'https://gitlab.com/kiotosi/promisify-media',
+    },
+    stack: ['Typescript'],
   },
   {
     type: 'gitlab',
     info: {
       name: 'home.projects.metaparser.name',
       description: 'home.projects.metaparser.description',
-      url: 'https://gitlab.com/kiotosi/meta-parser-js',
+      url: 'https://gitlab.com/kiotosi/meta-scrapper',
     },
+    stack: ['Javascript', 'Typescript'],
+  },
+  {
+    type: 'gitlab',
+    info: {
+      name: 'home.projects.kaomoji.name',
+      description: 'home.projects.kaomoji.description',
+      url: 'https://gitlab.com/kiotosi/vue-kaomoji',
+    },
+    stack: ['Javascript', 'Vue'],
   },
 ];
 

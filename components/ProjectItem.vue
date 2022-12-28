@@ -8,6 +8,9 @@
       <div class="project__description">
         {{ $t(info.description) }}
       </div>
+      <div v-show="stack && stack?.length > 0" class="project__stack">
+        {{ stack?.join(', ') }}
+      </div>
     </div>
   </a>
 </template>
@@ -22,6 +25,7 @@ interface ProjectProps {
     description: string;
     url: string;
   }
+  stack?: string[];
 }
 
 const props = defineProps<ProjectProps>();
@@ -54,6 +58,7 @@ const icon = computed<Image>(() => {
   cursor: pointer;
   padding: 16px;
   border-radius: 8px;
+  height: 100%;
 
   &:hover {
     background-color: #e7e7e7;
@@ -76,6 +81,10 @@ const icon = computed<Image>(() => {
   &__description {
     white-space: pre-wrap;
     margin-top: 4px;
+  }
+
+  &__stack {
+    font-size: 12px;
   }
 }
 
