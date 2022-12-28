@@ -39,6 +39,7 @@ $background-color: #f7f7f7;
 
 .error {
   display: flex;
+  overflow-y: hidden;
   user-select: none;
   flex-direction: column;
   justify-content: center;
