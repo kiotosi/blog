@@ -58,6 +58,7 @@ $background-color: #f7f7f7;
   &__title {
     margin-top: 0;
     background-color: $background-color;
+    line-height: 1.4;
   }
 
   &__button {
@@ -85,6 +86,32 @@ $background-color: #f7f7f7;
 
   to {
     background-position-x: 100%;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .error {
+    text-align: center;
+
+    &__title {
+      line-height: 1.2;
+    }
+
+    &__image {
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .error {
+    &__description {
+      text-align: center;
+    }
+
+    &__image {
+      width: 38%;
+    }
   }
 }
 </style>
