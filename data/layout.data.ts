@@ -1,6 +1,6 @@
 import type { HeaderNavigationItem } from '@/types/header.type';
 import type { Image } from '@/types/common.types';
-import type { FooterInfo, FooterLink } from '~~/types/footer.types';
+import type { FooterInfo } from '~~/types/footer.types';
 
 const logo: Image = {
   src: '/img/logo.svg',

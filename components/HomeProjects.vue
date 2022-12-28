@@ -1,6 +1,8 @@
 <template>
   <div class="projects">
-    <div class="projects__title">Проекты</div>
+    <div class="projects__title">
+      Проекты
+    </div>
     <ul class="projects__list project-list">
       <li v-for="(project, index) in projectList" :key="index" class="project-list__item project">
         <ProjectItem v-bind="project" />
