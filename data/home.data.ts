@@ -27,6 +27,14 @@ const gitList: GitItem[] = [
     },
     url: 'https://gitlab.com/kiotosi',
   },
+  {
+    image: {
+      type: 'image/svg+xml',
+      alt: 'Codepen Logo',
+      src: '/icons/codepen.svg',
+    },
+    url: 'https://codepen.io/kiotosi',
+  },
 ];
 
 const topicList: TopicItem[] = [
