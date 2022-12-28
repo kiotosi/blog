@@ -1,6 +1,6 @@
 <template>
   <div class="browser">
-
+    <StackNavigation />
   </div>
 </template>
 

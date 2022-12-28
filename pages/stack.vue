@@ -11,4 +11,7 @@ definePageMeta({
 </script>
 
 <style scoped lang="scss">
+.stack {
+  min-height: calc(100vh - 80px);
+}
 </style>
