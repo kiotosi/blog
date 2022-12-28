@@ -22,5 +22,6 @@ export interface ProjectItem {
     name: string;
     description: string;
     url: string;
-  }
+  };
+  stack?: string[];
 }
