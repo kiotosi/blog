@@ -85,4 +85,17 @@ export default {
       },
     },
   },
+  stack: {
+    navigation: {
+      frontend: 'Фронтэнд',
+      backend: 'Бэкенд',
+      testing: 'Тестирование',
+      other: 'Другое',
+      sublist: {
+        framework: 'Фреймворки',
+        library: 'Библиотеки',
+        additional: 'Утилиты',
+      }
+    },
+  },
 };

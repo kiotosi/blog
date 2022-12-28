@@ -11,3 +11,15 @@ export interface TechBranch {
   libraryList: StackItem[];
   utilityList: StackItem[];
 }
+
+interface NavigationItem {
+  title: string;
+  id: string;
+}
+
+export interface StackNavigationItem extends NavigationItem {
+  child?: NavigationItem[];
+}
+
+export type Branch = 'frontend' | 'backend' | 'testing' | 'other';
+export type SubBranch = 'framework' | 'library' | 'additional';

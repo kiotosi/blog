@@ -1,4 +1,4 @@
-import type { StackItem, TechBranch } from '@/types/stack.types';
+import type { StackItem, StackNavigationItem, TechBranch, Branch, SubBranch } from '@/types/stack.types';
 
 const frontend: TechBranch = {
   frameworkList: [
@@ -6,7 +6,7 @@ const frontend: TechBranch = {
       title: 'Vue',
       image: {
         alt: 'Vue logo',
-        src: '/icons/vue-logo.svg',
+        src: '/logos/vue-logo.svg',
       },
       isFavorite: true,
     },
@@ -14,7 +14,7 @@ const frontend: TechBranch = {
       title: 'Lit',
       image: {
         alt: 'Lit logo',
-        src: '/icons/lit-logo.svg',
+        src: '/logos/lit-logo.svg',
       },
       isFavorite: false,
     },
@@ -22,7 +22,7 @@ const frontend: TechBranch = {
       title: 'Bootstrap',
       image: {
         alt: 'Bootstrap logo',
-        src: '/icons/bootstrap-logo.svg',
+        src: '/logos/bootstrap-logo.svg',
       },
       isFavorite: false,
     },
@@ -43,11 +43,83 @@ const testing: TechBranch = {
   utilityList: [],
 };
 
-const additional: StackItem[] = [];
+const other: StackItem[] = [];
+
+const navigation: StackNavigationItem[] = [
+  {
+    title: 'stack.navigation.frontend',
+    id: getNavigationId('frontend'),
+    child: [
+      {
+        title: 'stack.navigation.sublist.framework',
+        id: getNavigationId('frontend', 'framework'),
+      },
+      {
+        title: 'stack.navigation.sublist.library',
+        id: getNavigationId('frontend', 'library'),
+      },
+      {
+        title: 'stack.navigation.sublist.additional',
+        id: getNavigationId('frontend', 'additional'),
+      },
+    ],
+  },
+  {
+    title: 'stack.navigation.backend',
+    id: getNavigationId('backend'),
+    child: [
+      {
+        title: 'stack.navigation.sublist.framework',
+        id: getNavigationId('frontend', 'framework'),
+      },
+      {
+        title: 'stack.navigation.sublist.library',
+        id: getNavigationId('backend', 'library'),
+      },
+      {
+        title: 'stack.navigation.sublist.additional',
+        id: getNavigationId('backend', 'additional'),
+      },
+    ],
+  },
+  {
+    title: 'stack.navigation.testing',
+    id: getNavigationId('testing'),
+    child: [
+      {
+        title: 'stack.navigation.sublist.framework',
+        id: getNavigationId('testing', 'framework'),
+      },
+      {
+        title: 'stack.navigation.sublist.library',
+        id: getNavigationId('testing', 'library'),
+      },
+      {
+        title: 'stack.navigation.sublist.additional',
+        id: getNavigationId('testing', 'additional'),
+      },
+    ],
+  },
+  {
+    title: 'stack.navigation.other',
+    id: getNavigationId('other'),
+  },
+];
+
+export function getNavigationId (branch: Branch, subbranch?: SubBranch) {
+  let selector = branch;
+
+  if (subbranch) {
+    selector += `-${subbranch}`;
+  }
+
+  return selector;
+}
 
 export default {
   frontend,
   backend,
   testing,
-  additional,
+  other,
+  navigation,
 };
