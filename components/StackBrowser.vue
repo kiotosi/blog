@@ -2,7 +2,7 @@
   <div class="browser">
     <div class="browser__container container">
       <StackNavigation :active-id="activeId" :navigation-list="stackData.navigation" @select="handleNavigationSelect" />
-      <div class="browser__stack-list stack-list">
+      <div ref="stackListNode" class="browser__stack-list stack-list">
         <StackItem v-for="(stack, index) in activeStackList" :key="index" class="stack-list__item" v-bind="stack" />
       </div>
     </div>
@@ -18,6 +18,7 @@ const activeId = ref({
   item: stackData.navigation.at(0)?.id || '',
   innerItem: '',
 });
+const stackListNode = ref<HTMLElement | null>();
 
 // Computed
 const activeStackList = computed<StackItem[]>(() => {
@@ -63,6 +64,11 @@ const activeStackList = computed<StackItem[]>(() => {
 function handleNavigationSelect (itemId: string, innerItemId?: string): void {
   activeId.value.item = itemId ?? '';
   activeId.value.innerItem = innerItemId ?? '';
+
+  // If we changed stack list - scroll it to the top
+  if (stackListNode.value) {
+    stackListNode.value.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 
 </script>
@@ -71,7 +77,6 @@ function handleNavigationSelect (itemId: string, innerItemId?: string): void {
 .browser {
   background-color: var(--blue);
   padding: 100px 0;
-  // height: calc(100vh - 80px);
 
   &__container {
     display: flex;
@@ -121,6 +126,15 @@ function handleNavigationSelect (itemId: string, innerItemId?: string): void {
 @media screen and (max-width: $mobile) {
   .browser {
     padding: 180px 0 100px;
+
+    &__container {
+      flex-direction: column;
+    }
+  }
+
+  .stack-list {
+    height: 200px;
+    justify-content: center;
   }
 }
 </style>

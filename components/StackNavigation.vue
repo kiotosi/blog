@@ -38,9 +38,6 @@ defineEmits<{(e: 'select', item: string, innerItem: string): void}>();
 $menu-spacing: 32px;
 .navigation {
 
-  &__list {
-  }
-
   &__sublist {
     margin-top: 8px;
     padding-left: 8px;
@@ -92,6 +89,33 @@ $menu-spacing: 32px;
       height: 1.5px;
       background-image: linear-gradient(76.3deg, rgba(44, 62, 78, 1) 12.6%, rgba(69, 103, 131, 1) 82.8%);
     }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .navigation {
+    width: 100%;
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      justify-items: center;
+    }
+
+    &__title {
+      font-size: 1.2rem;
+    }
+
+    &__sublist {
+      display: none !important;
+    }
+
+    &__item {
+      &:not(:first-child) {
+        margin-top: 0;
+      }
+  }
   }
 }
 </style>

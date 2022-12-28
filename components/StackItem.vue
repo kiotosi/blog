@@ -20,6 +20,7 @@ defineProps<StackItem>();
 
 <style scoped lang="scss">
 .stack-item {
+  position: relative;
   width: 125px;
   height: 125px;
   padding: 12px;
@@ -44,7 +45,13 @@ defineProps<StackItem>();
     text-align: right;
   }
 
-  &_favorite {
+  &_favorite::after {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    content: '✨';
+    font-size: 12px;
+    line-height: 100%;
   }
 }
 </style>
