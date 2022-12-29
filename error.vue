@@ -85,16 +85,6 @@ $background-color: #f7f7f7;
   }
 }
 
-@keyframes ride {
-  from {
-    background-position-x: 0;
-  }
-
-  to {
-    background-position-x: 100%;
-  }
-}
-
 @media screen and (max-width: $tablet) {
   .error {
     text-align: center;
