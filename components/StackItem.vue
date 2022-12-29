@@ -1,10 +1,10 @@
 <template>
-  <div class="stack-item" :class="{'stack-item_favorite': isFavorite}">
+  <NuxtLink :to="url" target="_blank" class="stack-item" :class="{'stack-item_favorite': isFavorite}">
     <img :src="image.src" :alt="image.alt" class="stack-item__image">
     <div class="stack-item__title">
       {{ title }}
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
@@ -14,6 +14,7 @@ interface StackItem {
   title: string;
   isFavorite: boolean;
   image: Image;
+  url: string;
 }
 defineProps<StackItem>();
 </script>
