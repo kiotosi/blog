@@ -4,7 +4,7 @@
       Kiotosi's Blog - Stack
     </Title>
     <StackBrowser class="stack__browser" />
-    <div class="container" />
+    <StackMovement class="stack__movement" />
   </div>
 </template>
 
@@ -16,8 +16,8 @@ definePageMeta({
 
 <style scoped lang="scss">
 .stack {
-  &__git {
-
+  &__movement {
+    margin-bottom: 0.5px;
   }
 }
 </style>
