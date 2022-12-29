@@ -3,7 +3,8 @@
     <Title>
       Kiotosi's Blog - Stack
     </Title>
-    <StackBrowser />
+    <StackBrowser class="stack__browser" />
+    <div class="container" />
   </div>
 </template>
 
@@ -14,4 +15,9 @@ definePageMeta({
 </script>
 
 <style scoped lang="scss">
+.stack {
+  &__git {
+
+  }
+}
 </style>
