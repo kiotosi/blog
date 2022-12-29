@@ -4,6 +4,7 @@ export interface StackItem {
   title: string;
   isFavorite: boolean;
   image: Image;
+  url: string;
 }
 
 export interface TechBranch {

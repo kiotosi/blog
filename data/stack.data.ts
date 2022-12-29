@@ -9,6 +9,7 @@ const frontend: TechBranch = {
         src: '/logos/vue-logo.svg',
       },
       isFavorite: true,
+      url: 'https://vuejs.org',
     },
     {
       title: 'Lit',
@@ -17,6 +18,7 @@ const frontend: TechBranch = {
         src: '/logos/lit-logo.svg',
       },
       isFavorite: false,
+      url: 'https://lit.dev',
     },
     {
       title: 'Typescript',
@@ -25,6 +27,7 @@ const frontend: TechBranch = {
         src: '/logos/typescript-logo.svg',
       },
       isFavorite: true,
+      url: 'https://www.typescriptlang.org',
     },
     {
       title: 'Svelte',
@@ -33,6 +36,7 @@ const frontend: TechBranch = {
         src: '/logos/svelte-logo.svg',
       },
       isFavorite: true,
+      url: 'https://svelte.dev',
     },
     {
       title: 'Bootstrap',
@@ -41,6 +45,7 @@ const frontend: TechBranch = {
         src: '/logos/bootstrap-logo.svg',
       },
       isFavorite: false,
+      url: 'https://getbootstrap.com',
     },
     {
       title: 'Javascript',
@@ -49,6 +54,7 @@ const frontend: TechBranch = {
         src: '/logos/javascript-logo.svg',
       },
       isFavorite: false,
+      url: 'https://developer.mozilla.org/ru/docs/Learn/JavaScript/First_steps/What_is_JavaScript',
     },
     {
       title: 'HTML 5',
@@ -57,6 +63,7 @@ const frontend: TechBranch = {
         src: '/logos/html5-logo.svg',
       },
       isFavorite: false,
+      url: 'https://en.wikipedia.org/wiki/HTML5',
     },
     {
       title: 'CSS 3',
@@ -65,6 +72,7 @@ const frontend: TechBranch = {
         src: '/logos/css3-logo.svg',
       },
       isFavorite: false,
+      url: 'https://ru.wikipedia.org/wiki/CSS',
     },
   ],
   libraryList: [
@@ -75,6 +83,7 @@ const frontend: TechBranch = {
         src: '/logos/vue-router-logo.svg',
       },
       isFavorite: true,
+      url: 'https://router.vuejs.org',
     },
     {
       title: 'Pinia',
@@ -83,6 +92,7 @@ const frontend: TechBranch = {
         src: '/logos/pinia-logo.svg',
       },
       isFavorite: true,
+      url: 'https://pinia.vuejs.org',
     },
     {
       title: 'Three.js',
@@ -91,6 +101,7 @@ const frontend: TechBranch = {
         src: '/logos/threejs-logo.svg',
       },
       isFavorite: false,
+      url: 'https://threejs.org',
     },
     {
       title: 'JQuery',
@@ -99,6 +110,7 @@ const frontend: TechBranch = {
         src: '/logos/jquery-logo.svg',
       },
       isFavorite: false,
+      url: 'https://jquery.com',
     },
   ],
   utilityList: [
@@ -109,6 +121,7 @@ const frontend: TechBranch = {
         src: '/logos/sass-logo.svg',
       },
       isFavorite: true,
+      url: 'https://sass-lang.com',
     },
     {
       title: 'ESLint',
@@ -117,6 +130,7 @@ const frontend: TechBranch = {
         src: '/logos/eslint-logo.svg',
       },
       isFavorite: false,
+      url: 'https://eslint.org',
     },
     {
       title: 'Gulp',
@@ -125,6 +139,7 @@ const frontend: TechBranch = {
         src: '/logos/gulp-logo.svg',
       },
       isFavorite: false,
+      url: 'https://gulpjs.com',
     },
     {
       title: 'Hugo',
@@ -133,6 +148,7 @@ const frontend: TechBranch = {
         src: '/logos/hugo-logo.svg',
       },
       isFavorite: false,
+      url: 'https://gohugo.io',
     },
     {
       title: 'Less',
@@ -141,6 +157,7 @@ const frontend: TechBranch = {
         src: '/logos/less-logo.svg',
       },
       isFavorite: false,
+      url: 'https://lesscss.org',
     },
     {
       title: 'Stylus',
@@ -149,6 +166,7 @@ const frontend: TechBranch = {
         src: '/logos/stylus-logo.svg',
       },
       isFavorite: false,
+      url: 'https://stylus-lang.com',
     },
     {
       title: 'Vite',
@@ -157,6 +175,7 @@ const frontend: TechBranch = {
         src: '/logos/vite-logo.svg',
       },
       isFavorite: true,
+      url: 'https://vitejs.dev',
     },
     {
       title: 'Webpack',
@@ -165,6 +184,7 @@ const frontend: TechBranch = {
         src: '/logos/webpack-logo.svg',
       },
       isFavorite: false,
+      url: 'https://webpack.js.org',
     },
   ],
 };
@@ -178,6 +198,7 @@ const backend: TechBranch = {
         src: '/logos/express-logo.svg',
       },
       isFavorite: true,
+      url: 'https://expressjs.com',
     },
     {
       title: 'Firebase',
@@ -186,6 +207,7 @@ const backend: TechBranch = {
         src: '/logos/firebase-logo.svg',
       },
       isFavorite: true,
+      url: 'https://firebase.google.com',
     },
     {
       title: 'MongoDB',
@@ -194,6 +216,7 @@ const backend: TechBranch = {
         src: '/logos/mongodb-logo.svg',
       },
       isFavorite: false,
+      url: 'https://www.mongodb.com',
     },
     {
       title: 'Node.js',
@@ -202,6 +225,7 @@ const backend: TechBranch = {
         src: '/logos/nodejs-logo.svg',
       },
       isFavorite: true,
+      url: 'https://nodejs.org',
     },
     {
       title: 'Nuxt.js',
@@ -210,6 +234,7 @@ const backend: TechBranch = {
         src: '/logos/nuxtjs-logo.svg',
       },
       isFavorite: true,
+      url: 'https://nuxt.com',
     },
     {
       title: 'Redis',
@@ -218,6 +243,7 @@ const backend: TechBranch = {
         src: '/logos/redis-logo.svg',
       },
       isFavorite: false,
+      url: 'https://redis.io',
     },
     {
       title: 'Rust',
@@ -226,6 +252,7 @@ const backend: TechBranch = {
         src: '/logos/rust-logo.svg',
       },
       isFavorite: true,
+      url: 'https://www.rust-lang.org',
     },
   ],
   libraryList: [
@@ -236,6 +263,7 @@ const backend: TechBranch = {
         src: '/logos/socketio-logo.svg',
       },
       isFavorite: true,
+      url: 'https://socket.io',
     },
   ],
   utilityList: [
@@ -246,6 +274,7 @@ const backend: TechBranch = {
         src: '/logos/electron-logo.svg',
       },
       isFavorite: false,
+      url: 'https://www.electronjs.org',
     },
     {
       title: 'Tauri',
@@ -254,6 +283,7 @@ const backend: TechBranch = {
         src: '/logos/tauri-logo.svg',
       },
       isFavorite: true,
+      url: 'https://tauri.app',
     },
     {
       title: 'Heroku',
@@ -262,6 +292,7 @@ const backend: TechBranch = {
         src: '/logos/heroku-logo.svg',
       },
       isFavorite: true,
+      url: 'https://www.heroku.com',
     },
   ],
 };
@@ -274,6 +305,7 @@ const testing: StackItem[] = [
       src: '/logos/jest-logo.svg',
     },
     isFavorite: true,
+    url: 'https://jestjs.io',
   },
   {
     title: 'Mocha',
@@ -282,6 +314,7 @@ const testing: StackItem[] = [
       src: '/logos/mocha-logo.svg',
     },
     isFavorite: false,
+    url: 'https://mochajs.org',
   },
   {
     title: 'Webdriver.io',
@@ -290,6 +323,7 @@ const testing: StackItem[] = [
       src: '/logos/webdriverio-logo.svg',
     },
     isFavorite: false,
+    url: 'https://webdriver.io',
   },
   {
     title: 'Spectron',
@@ -298,6 +332,7 @@ const testing: StackItem[] = [
       src: '/logos/spectron-logo.png',
     },
     isFavorite: true,
+    url: 'https://github.com/electron-userland/spectron',
   },
 ];
 
@@ -309,6 +344,7 @@ const other: StackItem[] = [
       src: '/logos/bash-logo.svg',
     },
     isFavorite: false,
+    url: 'https://www.gnu.org/software/bash/',
   },
   {
     title: 'Docker',
@@ -317,6 +353,7 @@ const other: StackItem[] = [
       src: '/logos/docker-logo.svg',
     },
     isFavorite: true,
+    url: 'https://www.docker.com',
   },
   {
     title: 'Figma',
@@ -325,6 +362,7 @@ const other: StackItem[] = [
       src: '/logos/figma-logo.svg',
     },
     isFavorite: true,
+    url: 'http://figma.com',
   },
   {
     title: 'VSCode',
@@ -333,6 +371,7 @@ const other: StackItem[] = [
       src: '/logos/vscode-logo.svg',
     },
     isFavorite: false,
+    url: 'https://code.visualstudio.com',
   },
   {
     title: 'Vim',
@@ -341,6 +380,7 @@ const other: StackItem[] = [
       src: '/logos/vim-logo.svg',
     },
     isFavorite: true,
+    url: 'https://www.vim.org',
   },
   {
     title: 'Linux',
@@ -349,6 +389,7 @@ const other: StackItem[] = [
       src: '/logos/linux-logo.svg',
     },
     isFavorite: true,
+    url: 'https://ru.wikipedia.org/wiki/Linux',
   },
   {
     title: 'Git',
@@ -357,6 +398,7 @@ const other: StackItem[] = [
       src: '/logos/git-logo.svg',
     },
     isFavorite: true,
+    url: 'https://git-scm.com',
   },
 ];
 
