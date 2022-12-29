@@ -27,6 +27,7 @@ import layoutData from '@/data/layout.data';
     background: white;
     justify-content: center;
     padding: 24px;
+    z-index: 10;
 
     &__navigation {
       margin-left: auto;

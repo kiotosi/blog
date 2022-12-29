@@ -17,9 +17,13 @@
 <script setup lang="ts">
 import layoutData from './data/layout.data';
 const props = defineProps({
-  error: Object,
+  error: {
+    type: Object,
+    required: true,
+  },
 });
 
+// eslint-disable-next-line no-console
 console.error(props.error);
 </script>
 

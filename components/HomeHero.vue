@@ -89,25 +89,15 @@ defineProps<HeroProps>();
     }
 
     &__image {
-      max-width: 350px;
-      margin: 60px auto 0;
-    }
-  }
-}
-
-@media screen and (max-width: $tablet) {
-  .hero {
-    &__image {
       max-width: initial;
+      margin: 60px auto 0;
     }
   }
 }
 
 @media screen and (max-width: $mobile) {
   .hero {
-    &__title {
-      font-size: 32px;
-    }
+    padding: 100px 0 100px;
   }
 }
 </style>
