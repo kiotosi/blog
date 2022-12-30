@@ -1,6 +1,7 @@
 <template>
   <div>
     <AppHeader />
+    <NuxtLoadingIndicator />
     <slot />
     <AppFooter />
   </div>

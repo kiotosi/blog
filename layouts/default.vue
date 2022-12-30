@@ -1,10 +1,11 @@
 <template>
   <div>
     <AppHeader />
+    <NuxtLoadingIndicator />
     <div class="container">
       <slot />
+      <AppFooter />
     </div>
-    <AppFooter />
   </div>
 </template>
 
