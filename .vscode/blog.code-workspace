@@ -1,3 +1,32 @@
 {
-  
+  "folders": [
+    {
+      "name": "🌊 Root",
+      "path": "../",
+    },
+    {
+      "name": "👕 Layouts",
+      "path": "../layouts",
+    },
+    {
+      "name": "📄 Pages",
+      "path": "../pages",
+    },
+    {
+      "name": "🪵 Components",
+      "path": "../components",
+    },
+    {
+      "name": "🤖 Static data",
+      "path": "../data",
+    },
+    {
+      "name": "🇯🇵 Localization",
+      "path": "../locale",
+    },
+    {
+      "name": "✨ Content",
+      "path": "../content",
+    }
+  ]
 }
