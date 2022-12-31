@@ -63,6 +63,10 @@ defineProps<StackItem>();
     &:hover {
       background-color: #f9f9f9;
     }
+
+    .stack-item__title {
+      text-align: center;
+    }
   }
 }
 </style>

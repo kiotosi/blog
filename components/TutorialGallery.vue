@@ -88,6 +88,7 @@ function handleMouseClick (ev: MouseEvent) {
 
 <style scoped lang="scss">
 .gallery {
+  cursor: grab;
   max-width: 100%;
   overflow-x: hidden;
 
