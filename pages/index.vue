@@ -5,9 +5,9 @@
       v-bind="homeData.hero"
       class="home__hero"
     />
-    <HomeGit class="home__git" :git-list="homeData.gitList" />
+    <RepositoryGallery class="home__git" :git-list="homeData.gitList" />
     <HomeTopics class="home__topics" :topic-list="homeData.topicList" />
-    <HomeProjects class="home__projects" :project-list="homeData.projectList" />
+    <ProjectGrid class="home__projects" :project-list="homeData.projectList" />
   </div>
 </template>
 

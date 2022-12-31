@@ -1,4 +1,5 @@
 import type { PostItem, TagItem } from '@/types/blog.types';
+import type { StackItem } from '~~/types/stack.types';
 
 const tagList: TagItem[] = [
   {
@@ -39,8 +40,201 @@ const sortList = [
   },
 ];
 
+const tutorialList: StackItem[] = [
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+  {
+    title: 'Lit',
+    image: {
+      src: '/logos/lit-logo.svg',
+      alt: 'Lit tutorial',
+    },
+    isFavorite: false,
+    url: '/tutorial/lit',
+  },
+];
+
 export default {
   tagList,
   postList,
   sortList,
+  tutorialList,
 };

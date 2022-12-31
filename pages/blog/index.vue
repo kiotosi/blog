@@ -1,5 +1,8 @@
 <template>
   <div class="blog">
+    <Title>
+      Kiotosi's Blog - Post List
+    </Title>
     <div class="blog__header header">
       <div class="header__row">
         <h1 class="header__title">
@@ -24,6 +27,7 @@
         <AppSelect :select-list="postsData.sortList" class="header__sort" />
       </div>
     </div>
+    <TutorialGallery class="blog__tutorial-list" title="Туториалы" :tutorial-list="postsData.tutorialList" />
     <div class="blog__postlist postlist">
       <PostItem v-for="post in postsData.postList" :key="post.id" class="post__item" v-bind="post" />
     </div>
@@ -40,7 +44,11 @@ import postsData from '@/data/posts.data';
   margin-top: 32px;
 
   &__postlist {
-    margin-top: 16px;
+    margin: 32px 0;
+  }
+
+  &__tutorial-list {
+    margin-top: 36px;
   }
 }
 

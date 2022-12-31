@@ -4,7 +4,7 @@
       Kiotosi's Blog - Stack
     </Title>
     <StackBrowser class="stack__browser" />
-    <StackMovement class="stack__movement" />
+    <StackSteps class="stack__movement" />
   </div>
 </template>
 

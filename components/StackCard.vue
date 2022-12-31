@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="url" target="_blank" class="stack-item" :class="{'stack-item_favorite': isFavorite}">
+  <NuxtLink :to="url" target="_blank" class="stack-item" :class="{'stack-item_favorite': isFavorite, 'stack-item_tutorial': mode === 'tutorial'}">
     <img :src="image.src" :alt="image.alt" class="stack-item__image">
     <div class="stack-item__title">
       {{ title }}
@@ -15,6 +15,7 @@ interface StackItem {
   isFavorite: boolean;
   image: Image;
   url: string;
+  mode: 'stack' | 'tutorial';
 }
 defineProps<StackItem>();
 </script>
@@ -53,6 +54,15 @@ defineProps<StackItem>();
     content: '✨';
     font-size: 12px;
     line-height: 100%;
+  }
+
+  &_tutorial {
+    border: #d8d8d8 1px solid;
+    box-shadow: none;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
   }
 }
 </style>
