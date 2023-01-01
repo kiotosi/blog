@@ -1,6 +1,6 @@
 <template>
   <div class="post">
-    <NuxtLink class="post__link" :to="`/blog/${id}`">
+    <NuxtLink class="post__link" :to="url">
       <div class="post__title">
         {{ title }}
       </div>
@@ -23,7 +23,7 @@ interface PostProps {
   title: string;
   description: string;
   tagList: TagItem[];
-  id: string;
+  url: string;
 }
 defineProps<PostProps>();
 </script>

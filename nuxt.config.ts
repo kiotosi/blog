@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     defaultLocale: 'ru',
     locales: ['ru', 'en'],
     highlight: {
-      theme: 'github-dark',
+      theme: 'min-dark',
     },
     sources: ['content'],
   },

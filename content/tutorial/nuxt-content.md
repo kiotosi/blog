@@ -1,5 +1,6 @@
 ---
 title: "Kiotosi's Blog: Nuxt content tutorial"
+draft: true
 description: 'meta description of the page'
 navigation:
   title: 'Nuxt Content'

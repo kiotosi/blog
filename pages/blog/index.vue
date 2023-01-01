@@ -31,7 +31,7 @@
     <div class="blog__postlist postlist">
       <PostItem
         v-for="post in postData"
-        :id="post._path"
+        :url="post._path"
         :key="post._path"
         class="post__item"
         :title="post.title ?? ''"
@@ -46,7 +46,7 @@
 import type { NavItem, ParsedContent, QueryBuilder } from '@nuxt/content/dist/runtime/types';
 import type { TagsContent, TutorialContent, PostContent, FullPostContent } from '@/types/content.types';
 import type { TagItem } from '@/types/blog.types';
-import postsData from '@/data/posts.data';
+import postsData from '~~/data/blog.data';
 import queryData from '@/data/query.data';
 
 const tagList = (await queryContent('tags').findOne()) as TagsContent;
