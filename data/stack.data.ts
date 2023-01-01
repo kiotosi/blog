@@ -237,6 +237,15 @@ const backend: TechBranch = {
       url: 'https://nuxt.com',
     },
     {
+      title: 'Nuxt Content',
+      image: {
+        alt: 'nuxt content logo',
+        src: '/logos/nuxt-content-logo.svg',
+      },
+      isFavorite: true,
+      url: 'https://content.nuxtjs.org',
+    },
+    {
       title: 'Redis',
       image: {
         alt: 'Redis logo',

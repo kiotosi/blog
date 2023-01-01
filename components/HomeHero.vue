@@ -97,7 +97,7 @@ defineProps<HeroProps>();
 
 @media screen and (max-width: $mobile) {
   .hero {
-    padding: 100px 0 100px;
+    padding: 0 0 100px;
   }
 }
 </style>

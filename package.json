@@ -9,6 +9,7 @@
     "lint": "eslint --ext .ts,.vue,.js --fix"
   },
   "dependencies": {
+    "@nuxt/content": "^2.3.0",
     "normalize.css": "^8.0.1",
     "sass": "^1.57.1"
   },

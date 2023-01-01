@@ -1,5 +1,5 @@
 <template>
-  <footer class="container footer">
+  <footer class="footer">
     <div class="footer__info">
       <div class="footer__title">
         {{ $t(layoutData.footerInfo.title) }}

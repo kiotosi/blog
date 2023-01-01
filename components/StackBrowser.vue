@@ -3,7 +3,7 @@
     <div class="browser__container container">
       <StackNavigation :active-id="activeId" :navigation-list="stackData.navigation" @select="handleNavigationSelect" />
       <div ref="stackListNode" class="browser__stack-list stack-list">
-        <StackItem v-for="(stack, index) in activeStackList" :key="index" class="stack-list__item" v-bind="stack" />
+        <StackCard v-for="(stack, index) in activeStackList" :key="index" class="stack-list__item" mode="stack" v-bind="stack" />
       </div>
     </div>
   </div>

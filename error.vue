@@ -9,7 +9,7 @@
     </div>
     <img :src="layoutData.a404.image.src" :alt="layoutData.a404.image.alt" class="error__image">
     <NuxtLink to="/" class="error__button">
-      {{ $t(layoutData.a404.fuGoBack) }}
+      <AppButton :text="$t(layoutData.a404.fuGoBack)" />
     </NuxtLink>
   </div>
 </template>
@@ -69,19 +69,6 @@ $background-color: #f7f7f7;
 
   &__button {
     margin-top: 16px;
-    cursor: pointer;
-    padding: 8px 16px;
-    background-color: #f7f7f7;
-    border: #d8d8d8 1px solid;
-    border-radius: 4px;
-
-    &:hover {
-      background-color: #f4f4f4;
-    }
-
-    &:active {
-      background-color: #f0f0f0;
-    }
   }
 }
 

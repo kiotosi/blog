@@ -2,8 +2,14 @@
 import enLocale from './locale/en.locale';
 import ruLocale from './locale/ru.locale';
 
+const additionalSCSSPathList = [
+  '+breakpoints',
+  '+mixins',
+];
+
 export default defineNuxtConfig({
   modules: [
+    '@nuxt/content',
     [
       '@nuxtjs/i18n',
       {
@@ -22,11 +28,23 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  content: {
+    defaultLocale: 'ru',
+    locales: ['ru', 'en'],
+    highlight: {
+      theme: 'min-dark',
+    },
+    sources: ['content'],
+  },
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/styles/+breakpoints.scss" as *;',
+          additionalData: additionalSCSSPathList
+            .map((path) => {
+              return `@use "@/styles/${path}.scss" as *;`;
+            })
+            .join(''),
         },
       },
     },

@@ -13,6 +13,11 @@ ul {
   list-style: none;
 }
 
+code {
+  font-family: 'JetBrains Mono', SF Mono, monospace;
+  font-size: 14px;
+}
+
 a {
   text-decoration: none;
   color: var(--link-color);
@@ -49,5 +54,11 @@ body {
   body {
     font-size: 17px;
     line-height: 159%;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .container {
+    padding-top: 100px;
   }
 }
