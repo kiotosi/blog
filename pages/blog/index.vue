@@ -1,7 +1,7 @@
 <template>
   <div class="blog">
     <Title>
-      Kiotosi's Blog - Post List
+      Kiotosi's Blog - Learn more!
     </Title>
     <div class="blog__header header">
       <div class="header__row">
@@ -12,7 +12,7 @@
       </div>
       <div class="header__row">
         <ul class="header__taglist taglist">
-          <li v-for="tag in postsData.tagList" :key="tag.id" class="taglist__item">
+          <li v-for="tag in tagList.tags" :key="tag.id" class="taglist__item">
             <!-- TODO: Change color implementation -->
             <TagItem
               :id="tag.id"
@@ -27,15 +27,74 @@
         <AppSelect :select-list="postsData.sortList" class="header__sort" />
       </div>
     </div>
-    <TutorialGallery class="blog__tutorial-list" title="Туториалы" :tutorial-list="postsData.tutorialList" />
+    <TutorialGallery class="blog__tutorial-list" :tutorial-list="tutorialData ?? []" title="Туториалы" />
     <div class="blog__postlist postlist">
-      <PostItem v-for="post in postsData.postList" :key="post.id" class="post__item" v-bind="post" />
+      <PostItem
+        v-for="post in postData"
+        :id="post._path"
+        :key="post._path"
+        class="post__item"
+        :title="post.title ?? ''"
+        :description="post.description ?? ''"
+        :tag-list="post.tagList"
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import type { NavItem, ParsedContent, QueryBuilder } from '@nuxt/content/dist/runtime/types';
+import type { TagsContent, TutorialContent, PostContent, FullPostContent } from '@/types/content.types';
+import type { TagItem } from '@/types/blog.types';
 import postsData from '@/data/posts.data';
+import queryData from '@/data/query.data';
+
+const tagList = (await queryContent('tags').findOne()) as TagsContent;
+
+const { data: tutorialData } = useAsyncData(() => {
+  const query = queryContent(queryData.tutorial);
+  return fetchNavigation<TutorialContent>(query);
+});
+
+const { data: postData } = useAsyncData(async () => {
+  const query = queryContent(queryData.post);
+  const postList = await fetchNavigation<PostContent>(query);
+  const fullPostList: FullPostContent[] = [];
+
+  // Searching for tags in loop
+  for (const post of postList) {
+    const foundTagList: TagItem[] = [];
+
+    // Looping through the each tag and searching for it in tagContent
+    post.tagList.forEach((tag) => {
+      const foundTag = tagList.tags.find(t => t.id === tag);
+      foundTag && foundTagList.push(foundTag);
+    });
+
+    fullPostList.push({ ...post, tagList: foundTagList });
+  }
+
+  return fullPostList;
+});
+
+/**
+ * Fetch content from any folder with typings
+ * @param query Query for fetch
+ */
+async function fetchNavigation<T> (query: QueryBuilder<ParsedContent>): Promise<T[]> {
+  const directoryNavigation = await fetchContentNavigation(query);
+
+  if (directoryNavigation[0]?.children) {
+    const contentList = directoryNavigation[0].children.map((nav: NavItem) => {
+      return { ...nav, url: nav._path };
+    });
+
+    return contentList as T[] || [];
+  }
+
+  return [];
+}
+
 </script>
 
 <style scoped lang="scss">

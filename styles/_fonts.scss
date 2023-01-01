@@ -1,3 +1,4 @@
+// Manrope
 @font-face {
     font-family: 'Manrope';
     src: url('/fonts/Manrope/Manrope-Bold.woff2') format('woff2'),
@@ -59,4 +60,50 @@
     font-weight: 600;
     font-style: normal;
     font-display: swap;
+}
+
+// Overpass Mono
+@font-face {
+  font-family: 'Overpass Mono';
+  src: url('fonts/Overpass-Mono/OverpassMono-Bold.woff2') format('woff2'),
+      url('fonts/Overpass-Mono/OverpassMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass Mono';
+  src: url('fonts/Overpass-Mono/OverpassMono-Light.woff2') format('woff2'),
+      url('fonts/Overpass-Mono/OverpassMono-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass Mono';
+  src: url('fonts/Overpass-Mono/OverpassMono-Medium.woff2') format('woff2'),
+      url('fonts/Overpass-Mono/OverpassMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass Mono';
+  src: url('fonts/Overpass-Mono/OverpassMono-Regular.woff2') format('woff2'),
+      url('fonts/Overpass-Mono/OverpassMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass Mono';
+  src: url('fonts/Overpass-Mono/OverpassMono-SemiBold.woff2') format('woff2'),
+      url('fonts/Overpass-Mono/OverpassMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }

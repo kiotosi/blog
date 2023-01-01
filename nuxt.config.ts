@@ -9,6 +9,7 @@ const additionalSCSSPathList = [
 
 export default defineNuxtConfig({
   modules: [
+    '@nuxt/content',
     [
       '@nuxtjs/i18n',
       {
@@ -26,15 +27,24 @@ export default defineNuxtConfig({
         },
       },
     ],
-    '@nuxt/content',
   ],
+  content: {
+    defaultLocale: 'ru',
+    locales: ['ru', 'en'],
+    highlight: {
+      theme: 'github-dark',
+    },
+    sources: ['content'],
+  },
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: additionalSCSSPathList.map((path) => {
-            return `@use "@/styles/${path}.scss" as *;`;
-          }).join(''),
+          additionalData: additionalSCSSPathList
+            .map((path) => {
+              return `@use "@/styles/${path}.scss" as *;`;
+            })
+            .join(''),
         },
       },
     },
