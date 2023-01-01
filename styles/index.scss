@@ -56,3 +56,9 @@ body {
     line-height: 159%;
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .container {
+    margin-top: 80px;
+  }
+}
