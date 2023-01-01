@@ -100,7 +100,6 @@ async function fetchNavigation<T> (query: QueryBuilder<ParsedContent>): Promise<
 <style scoped lang="scss">
 .blog {
   display: block;
-  margin-top: 32px;
 
   &__postlist {
     margin: 32px 0;

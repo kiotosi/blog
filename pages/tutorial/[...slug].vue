@@ -25,6 +25,10 @@ definePageMeta({
 
 <style lang="scss">
 .tutorial {
+  h1:first-child {
+    margin-top: 0;
+  }
+
   blockquote {
     margin-left: 0;
     padding-left: 36px;
