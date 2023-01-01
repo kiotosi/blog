@@ -1,6 +1,7 @@
 ---
 title: "Kiotosi's Blog: Vue Router tutorial"
 description: 'Туториал по Vue Router в формате рассказа на одной странице'
+draft: false
 navigation:
   title: 'Vue Router'
   image:
