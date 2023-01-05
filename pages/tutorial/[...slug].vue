@@ -2,12 +2,12 @@
   <div class="tutorial">
     <ContentDoc>
       <template #not-found>
-        <ArticleError
+        <ContentArticleError
           v-bind="blogData.notFoundArticle"
         />
       </template>
       <template #empty>
-        <ArticleError
+        <ContentArticleError
           v-bind="blogData.emptyArticle"
         />
       </template>
@@ -17,7 +17,6 @@
 
 <script setup lang="ts">
 import blogData from '@/data/blog.data';
-import ArticleError from '@/components/ArticleError.vue';
 definePageMeta({
   layout: 'article',
 });
@@ -35,8 +34,74 @@ definePageMeta({
     border-left: 3px solid var(--black);
   }
 
+  table {
+    color: #333;
+    background: white;
+    border: 1px solid grey;
+    font-size: 12pt;
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+  }
+
+  table thead th,
+  table tfoot th {
+    word-wrap: none;
+    color: rgb(32, 32, 32);
+    background: rgba(162, 162, 162, 0.1);
+  }
+
+  table caption {
+    padding:.5em;
+  }
+
+  table th,
+  table td {
+    padding: .5em;
+    border: 1px solid lightgrey;
+  }
+
   h1, h2, h3, h4 {
     margin: 1.5em 0 0.67em;
+    position: relative;
+    padding-left: 0;
+
+    a {
+      color: inherit;
+      cursor: initial;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  h3 {
+    color: #505050;
+    font-style: italic;
+  }
+
+  h1::before, h2::before, h3::before {
+    font-size: 16px;
+    position: absolute;
+    left: -32px;
+    bottom: -4px;
+    color: #a1a1a1;
+    text-transform: uppercase;
+  }
+
+  h1::before {
+    content: 'h1';
+  }
+
+  h2::before {
+    content: 'h2';
+  }
+
+  h3::before {
+    content: 'h3';
+    bottom: -1px;
+    font-style: initial;
   }
 
   code {
@@ -81,6 +146,14 @@ definePageMeta({
   pre code::-webkit-scrollbar-thumb {
     background-color: #717171;
     position: absolute;
+  }
+
+  a {
+    color: var(--article-link);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 </style>

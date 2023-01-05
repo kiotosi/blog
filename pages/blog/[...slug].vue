@@ -2,12 +2,12 @@
   <div class="post">
     <ContentDoc>
       <template #not-found>
-        <ArticleError
+        <ContentArticleError
           v-bind="blogData.notFoundArticle"
         />
       </template>
       <template #empty>
-        <ArticleError
+        <ContentArticleError
           v-bind="blogData.emptyArticle"
         />
       </template>
