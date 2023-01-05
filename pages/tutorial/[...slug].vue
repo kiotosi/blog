@@ -1,6 +1,7 @@
 <template>
   <div class="tutorial">
-    <ContentDoc>
+    <ContentTutorialNavigation :navigation-list="navigation" />
+    <ContentRenderer :value="tutorial">
       <template #not-found>
         <ContentArticleError
           v-bind="blogData.notFoundArticle"
@@ -11,19 +12,44 @@
           v-bind="blogData.emptyArticle"
         />
       </template>
-    </ContentDoc>
+    </ContentRenderer>
   </div>
 </template>
 
 <script setup lang="ts">
+import type { MarkdownNode } from '@nuxt/content/dist/runtime/types';
 import blogData from '@/data/blog.data';
+
 definePageMeta({
   layout: 'article',
+});
+
+const route = useRoute();
+
+// Tutorial content
+const tutorial = await queryContent('tutorial', route.path.split('/')[2]).findOne();
+
+// Navigation for headers
+const navigation = computed(() => {
+  const headerList: MarkdownNode[] = [];
+  tutorial.body.children.forEach((element: MarkdownNode) => {
+    if (element.tag?.match(/^h1$/)) {
+      headerList.push(element);
+    }
+  });
+
+  return headerList;
+});
+
+// SEO
+useHead({
+  title: tutorial.title,
 });
 </script>
 
 <style lang="scss">
 .tutorial {
+
   h1:first-child {
     margin-top: 0;
   }
@@ -62,8 +88,9 @@ definePageMeta({
   }
 
   h1, h2, h3, h4 {
-    margin: 1.5em 0 0.67em;
     position: relative;
+    margin: 0 0 0.67em;
+    padding-top: 1.5em;
     padding-left: 0;
 
     a {

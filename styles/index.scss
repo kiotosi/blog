@@ -31,6 +31,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 90vw;
   padding-left: 50px;
