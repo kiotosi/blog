@@ -76,6 +76,11 @@ definePageMeta({
     }
   }
 
+  h3 {
+    color: #505050;
+    font-style: italic;
+  }
+
   h1::before, h2::before, h3::before {
     font-size: 16px;
     position: absolute;
@@ -95,6 +100,8 @@ definePageMeta({
 
   h3::before {
     content: 'h3';
+    bottom: -1px;
+    font-style: initial;
   }
 
   code {
