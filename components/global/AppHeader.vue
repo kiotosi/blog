@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <NuxtLink to="/">
-      <img :src="layoutData.logo.src" :alt="layoutData.logo.alt" class="header__logo">
+      KIOTOSI
     </NuxtLink>
     <HeaderNavigation :navigation-list="layoutData.navigationList" class="header__navigation" />
   </header>

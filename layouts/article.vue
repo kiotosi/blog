@@ -14,9 +14,6 @@
 <style scoped lang="scss">
 .article__container {
   max-width: 875px;
-}
-.article code {
-  font-family: 'Overpass Mono';
-  font-size: 8px;
+  margin-bottom: 100px;
 }
 </style>
