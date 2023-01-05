@@ -23,9 +23,8 @@ const route = useRoute();
 <style scoped lang="scss">
 .tutorial-navigation {
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
   left: 24px;
+  bottom: 24px;
   width: 200px;
 
   &__list {
